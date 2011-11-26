@@ -10,19 +10,19 @@ public class ExtFooImpl extends FooImpl implements Foo {
 	@Override
 	public void setName(String name) {
 
-	try {
+		try {
 
-		System.out.println("ddddddddddddddd");
-	java.util.Random random = new java.util.Random();
+			System.out.println("set name in ExtFooImpl");
+			java.util.Random random = new java.util.Random();
 
-	int sleep = random.nextInt(1000);
+			int sleep = random.nextInt(1000);
 
-	Thread.sleep(sleep);
+			Thread.sleep(sleep);
 
-	} catch (InterruptedException e) {
-	}
+		} catch (InterruptedException e) {
+		}
 
-	super.setName(name);
+		super.setName(name);
 
 	}
 

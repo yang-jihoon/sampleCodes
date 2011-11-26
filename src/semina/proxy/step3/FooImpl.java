@@ -1,10 +1,7 @@
-package semina.proxy.step4;
+package semina.proxy.step3;
 
+import semina.proxy.step3.Foo;
 
-/**
- * @author need4spd, need4spd@cplanet.co.kr, 2011. 2. 23.
- *
- */
 public class FooImpl implements Foo {
 
 	private String name;

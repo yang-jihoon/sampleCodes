@@ -9,8 +9,8 @@ public class FooTest {
 
 	private static void print(Foo foo) {
 
-		foo.setName("pungjoo");
-		foo.setAddress("pegasus");
+		foo.setName("yongseok");
+		foo.setAddress("nowon");
 
 		System.out.println(foo.getName() + " / " + foo.getAddress());
 
