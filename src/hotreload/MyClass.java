@@ -8,7 +8,7 @@ package hotreload;
 public class MyClass implements MyClassInterface {
 
 	public String getName() {
-		return "assasssaaaaaqweq2222222222222weqaa111111112323aa";
+		return "이영미 장용석";
 		
 	}
 }
