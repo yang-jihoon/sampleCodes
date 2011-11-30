@@ -1,6 +1,10 @@
 package semina.equals;
 
-import java.awt.Color;
+import java.util.ArrayList;
+import java.util.List;
+
+import semina.toString.User;
+
 
 /**
  * @author need4spd, need4spd@cplanet.co.kr, 2010. 8. 23.
@@ -9,27 +13,19 @@ import java.awt.Color;
 public class Test {
 	
 	public static void main(String[] args) {
-		//��Ī���� ����
-		CaseInsensitiveString cis = new CaseInsensitiveString("Jang");
-		String s = "jang";
+		User jang = new User();
+		jang.setRegstNum(1111);
 		
-		System.out.println(cis.equals(s));
-		System.out.println(s.equals(cis));
+		User jang2 = new User();
+		jang.setRegstNum(1111);
 		
-		//���༺�� ���� - 1. ��Ī��
-		Point p = new Point(1,2);
-		ColorPoint cp = new ColorPoint(1, 2, Color.CYAN);
+		System.out.println(jang == jang2);
 		
-		System.out.println(p.equals(cp));
-		System.out.println(cp.equals(p));
+		System.out.println(jang.equals(jang2));
 		
-		//���༺�� ���� 
-		ColorPoint p1 = new ColorPoint(1, 2, Color.RED);
-		Point p2 = new Point(1,2);
-		ColorPoint p3 = new ColorPoint(1, 2, Color.BLUE);
+		List<User> userList = new ArrayList<User>();
+		userList.add(jang);
 		
-		System.out.println(p1.equals(p2));
-		System.out.println(p2.equals(p3));
-		System.out.println(p1.equals(p3));
+		System.out.println(userList.contains(jang2));
 	}
 }
