@@ -7,9 +7,9 @@ package semina.enumtest;
  */
 public class SearchRequest {
 	
-	//�������� �Ķ����
+	//정렬조건 파라메터
 	/**
-	 * P : �α�������, N : ���ݳ�����, ...
+	 * P : 인기도순, N : 최신순, ...
 	 *
 	 */
 
@@ -23,8 +23,8 @@ public class SearchRequest {
 		return sortCode;
 	}
 
-	//�������� �״�� �ΰ� ���� �����.
-	private SortCode sortCodeenum = SortCode.P;
+	//기존것은 그대로두고 새로 만들자
+	//private SortCode sortCodeenum = SortCode.P;
 
 	public String getSortNm() {
 		return SortCode.valueOf(sortCode).getCodeName();

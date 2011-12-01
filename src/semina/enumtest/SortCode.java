@@ -6,44 +6,44 @@ package semina.enumtest;
  *
  */
 public enum SortCode {
-	P("�α⵵��"){
+	P("인기도순"){
 		@Override
 		public String getSortQuery() {
-			return "�α⵵������";
+			return "인기도순쿼리";
 		}
 	},
-	B("���ݳ�����"){
+	B("정확도순"){
 		@Override
 		public String getSortQuery() {
-			return "���ݳ���������";
+			return "정확도순쿼리";
 		}
 	},
-	H("�������ݼ�"){
+	H("높은가격순"){
 		@Override
 		public String getSortQuery() {
-			return "�������ݼ�����";
+			return "높은가격순쿼리";
 		}
 	},
-	L("�������ݼ�"){
+	L("낮은가격순"){
 		@Override
 		public String getSortQuery() {
-			return "�������ݼ�����";
+			return "낮은가격순";
 		}
 	},
-	S("������������"){
+	S("판매순"){
 		@Override
 		public String getSortQuery() {
-			return "����������������";
+			return "판매순쿼리";
 		}
 	},
-	N("��Ȯ����"){
+	N("최신등록순"){
 		@Override
 		public String getSortQuery() {
-			return "��Ȯ��������";
+			return "최신등록순쿼리";
 		}
 	};
 
-	private String codeName = "�α⵵��";
+	private String codeName = "인기도순";
 
 	SortCode(String codeName) {
 		this.codeName = codeName;
