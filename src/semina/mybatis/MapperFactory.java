@@ -13,6 +13,7 @@ public class MapperFactory {
 				new Class[] { clazz }, new MapperProxyHandler());
 	}
 
+//	Generic의 사용
 //	@SuppressWarnings("unchecked")  
 //	public  <T> T getMapper(Class<T> clazz) {  
 //		return (T)Proxy.newProxyInstance(clazz.getClassLoader(),  
