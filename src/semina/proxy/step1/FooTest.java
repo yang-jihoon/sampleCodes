@@ -14,13 +14,13 @@ public class FooTest {
 
 		System.out.println(foo.getName() + " / " + foo.getAddress());
 
-		}
+	}
 
-		public static void main(String[] args) {
+	public static void main(String[] args) {
 
 		Foo foo = new FooImpl();
 
 		print(foo);
-		}
+	}
 
 }

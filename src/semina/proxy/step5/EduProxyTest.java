@@ -11,7 +11,7 @@ public class EduProxyTest {
 	public static void main(String[] args) throws IllegalArgumentException, InstantiationException,
 	IllegalAccessException, ClassNotFoundException {
 
-		EduProxyManager.register("Foo", "proxy.step5.ExtFooImpl");
+		EduProxyManager.register("Foo", "semina.proxy.step5.ExtFooImpl");
 
 		Foo foo = (Foo) EduProxyManager.getService("Foo");
 
